@@ -16,9 +16,7 @@ function todosLoader(queryClient: QueryClient) {
 function todoLoader(queryClient: QueryClient) {
   return async ({ params }: LoaderArgs) => {
     const id = params.id ?? "";
-    const data = queryClient.getQueryData<Todo>(
-      todoQuery(id).queryKey
-    );
+    const data = queryClient.getQueryData<Todo>(todoQuery(id).queryKey);
     if (data) {
       return data;
     }

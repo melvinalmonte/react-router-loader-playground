@@ -1,8 +1,11 @@
-import { AppRoutes } from "./routes"
+import { AppRoutes } from "./routes";
 
 function App() {
-
-  return (<AppRoutes />)
+  return (
+    <div className="container mx-auto">
+      <AppRoutes />
+    </div>
+  );
 }
 
-export default App
+export default App;
